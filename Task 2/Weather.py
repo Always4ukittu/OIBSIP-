@@ -1,33 +1,3 @@
-# import requests
-
-# def get_weather(api_key, city):
-#     base_url = "http://api.openweathermap.org/data/2.5/weather"
-#     params = {
-#         'q': city,
-#         'appid': api_key,
-#         'units': 'metric'  # You can change this to 'imperial' for Fahrenheit
-#     }
-
-#     try:
-#         response = requests.get(base_url, params=params)
-#         data = response.json()
-
-#         if response.status_code == 200:
-#             print(f"Weather in {city}:")
-#             print(f"Temperature: {data['main']['temp']}°C")
-#             print(f"Description: {data['weather'][0]['description']}")
-#         else:
-#             print(f"Error: {data['message']}")
-
-#     except requests.ConnectionError:
-#         print("Failed to connect to the weather API.")
-
-# # Replace 'YOUR_API_KEY' with the actual API key you obtained from OpenWeatherMap
-# api_key = 'b834d100667d85b9dc5c25d3d4f49894'
-# city_name = input("Enter the city name: ")
-
-# get_weather(api_key, city_name)
-
 import requests
 import tkinter as tk
 from tkinter import ttk
